@@ -29,7 +29,7 @@ RSA使用"秘匙对"对数据进行加密解密.在加密解密数据前,需要�
 		RSATool *tool = [RSATool new];
 		[tool importKeyWithType:KeyTypePrivate andkeyString:APP_SECRET];
 		NSString *signedString = [tool signString:encodeString];
-		NSLog(@"加签后为:%@",signnedString);
+		NSLog(@"加签后为:%@",signedString);
 更多方法可以查看RSATool.h中的注释,关于秘钥的导入，提供了如下两种方法,其中keyType为秘钥类型，分为公钥与私钥，公钥用于加密，私钥用于解密及加签
 
 
