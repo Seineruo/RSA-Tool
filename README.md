@@ -1,12 +1,12 @@
 # RSA-Tool
 ### 基于openssl的RSA数据加密解密加签工具
-###简介
+### 简介
 
 RSA算法是一种非对称加密算法,常被用于加密数据传输.如果配合上数字摘要算法, 也可以用于文件签名.
 
 本文将讨论如何在iOS中使用RSA传输加密数据.
 
-###原理
+### 原理
 RSA使用"秘匙对"对数据进行加密解密.在加密解密数据前,需要先生成公钥(public key)和私钥(private key).
 
 公钥(public key): 用于加密数据及验证签名. 
@@ -17,11 +17,11 @@ RSA使用"秘匙对"对数据进行加密解密.在加密解密数据前,需要�
 
 
 
-###接入方法
+### 接入方法
 - **下载openssl文件夹及RSATool**
 - **将openssl文件夹及RSATool拖到工程下，打开当前项目的tag,修改bulid Settings->Search Paths->Header Search Paths为当前项目的相对路径**
 	
-###使用方法
+### 使用方法
 - **在需要引用的ViewController中import "RSATool.h"**
 - **初始化RSATool并导入秘钥,下面以私钥加签为例**
 		
